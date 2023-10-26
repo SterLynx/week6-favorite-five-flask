@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kekambas Blog | {% block title %}Base{% endblock %}</title>
+    <!-- Bring in the Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bring in our own CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://fonts.cdnfonts.com/css/roboto-mono" rel="stylesheet">
+
+</head>
+
+<body>
+
+    {% include 'nav.html' %}
+
+    <div class="row">
+        <div class="col">
+            {% include 'alerts.html' %}
+        </div>
+    </div>
+
+    <div class="row py-5">
+        <div class="col text-center">
+            {% block header %}
+            {% endblock %}
+        </div>
+    </div>
+    
+    <div class="pics">
+
+
+        <div class="row">
+            <div class="col-md-4">
+            <img src="{{ url_for('static', filename='hurricane.jpg') }}" alt="Image 1">
+            </div>
+            <div class="col-md-8">
+                <h4>Anvil Hurricane</h4>
+                <p>Heavy Fighter - 2 seater, great fun with a friend. It's small and agile but can take down massive targets in seconds with its 4 size 3 guns on its manned turret. The design of the ship inside and out is sleek and beautiful, the deep whir of the engines in the cockpit keeps me coming back. One of my favorite ship designs of all time.</p>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4">
+                <img src="{{ url_for('static', filename='cater.png') }}" alt="Image 2">
+                </div>
+                <div class="col-md-8">
+                    <h4>Drake Caterpillar: Pirate Edition</h4>
+                    <p>Heavy Freight - My daily driver. This massive cargo hauler is just fun to fly, it's slow and lumbering but it's incredibly tanky and can shrug off a full assault from a group of light fighters. Its large carrying capacity makes it suitable for cargo hauling for big profits and its unique landing gear legs makes landing on uneven terrain easy. The special edition livery gives it an "outlaw" style makeover in all black with red accents.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='redeemer.jpeg') }}" alt="Image 3">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Aegis Redeemer</h4>
+                        <p>Heavy Gunship - My preferred multicrew ship when taking friends on a trip to take down a large number of targets. You can easily take down a group of players with the massive size 5 guns on the two manned turrets. Capable of utilizing full ballistics to deliver jaw-dropping amounts of damage to anything that moves.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                        <img src="{{ url_for('static', filename='corsair.jpg') }}" alt="Image 4">
+                        </div>
+                        <div class="col-md-8">
+                            <h4>Drake Corsair</h4>
+                            <p>Exploration Vessel - The roadtrip machine. This beautiful ship can take you and three of your friends anywhere in the system in style with tons and tons of guns to boot. The array of size 3 missiles is enough to knock out medium size targets and the pilot's 4 size 5 hardpoints can take down capital class ships in seconds. The main event of this ship is its folding wings and unique co-pilot cockpit design.</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='liberator.png') }}" alt="Image 5">
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Anvil Liberator</h4>
+                                <p>Medium Carrier - Currently in concept, not flyable yet. The most anticipated ship for me, it's the gateway to other carrier ships like the Drake Kraken which is years away from completion. The Liberator is the perfect solution for me because my team of friends is only 2-4, the Liberator can be the team's carrier for each of their ships across any system in the galaxy.</p>
+                            </div>
+            
+    
+</div>
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+*{
+    color:white;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(31, 30, 37);                                            
+    
+}
+
+img {
+    display: block;
+    padding: 25px;
+    width: 500px;
+}
+
+.pics {
+    padding-left: 25px;
+}
+
+.image-container {
+    font-size: 10pt;
+}
+
+/* Ship name */
+.row {
+    font-size: 10pt;
+}
+
+/* Description */
+.col-md-8 {
+    font-size: 12pt;
+    padding-top: 40px;
+}
