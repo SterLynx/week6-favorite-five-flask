@@ -10,6 +10,10 @@ from app.models import User
 def index():
     return render_template('index.html')
 
+@app.route('/links')
+def links():
+    return render_template('links.html')
+
 # Create a second route
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():

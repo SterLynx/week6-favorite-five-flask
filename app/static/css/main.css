@@ -19,7 +19,7 @@ img {
     font-size: 10pt;
 }
 
-/* Ship name */
+
 .row {
     font-size: 10pt;
 }
@@ -28,4 +28,9 @@ img {
 .col-md-8 {
     font-size: 12pt;
     padding-top: 40px;
+}
+
+.links {
+    color: white;
+    background-color: gray;
 }
